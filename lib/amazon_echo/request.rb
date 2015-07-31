@@ -1,7 +1,17 @@
 class AmazonEcho::Request
   def initialize(request={})
-    @version  = request[:version]
-    @session  = request[:session]
-    @request  = request[:request]
+    @request  = request
+  end
+
+  def type
+    @request["type"]
+  end
+
+  def intent
+    @request["intent"]["name"]
+  end
+
+  def slot_value(slot_name)
+    @request["intent"]['slots'][slot_name]['value'] rescue nil
   end
 end

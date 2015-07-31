@@ -9,4 +9,8 @@ class AmazonEcho
     @request  = Request.new(request)
     @response = Response.new(response)
   end
+
+  def say(output_speech=nil)
+    response.say(output_speech)
+  end
 end

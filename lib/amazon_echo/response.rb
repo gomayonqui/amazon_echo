@@ -5,7 +5,7 @@ class AmazonEcho::Response
     @output_speech        = 'OK, done'
   end
 
-  def speech(output_speech=nil)
+  def say(output_speech=nil)
     @output_speech = output_speech if output_speech
     response
   end
