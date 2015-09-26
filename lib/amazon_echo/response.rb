@@ -20,22 +20,22 @@ class AmazonEcho::Response
 
   def response_hash
     { 'outputSpeech' => response_output_speech,
-      card: response_card,
-      reprompt: response_reprompt,
-      shouldEndSession: response_end_session
+      'card' => response_card,
+      'reprompt' => response_reprompt,
+      'shouldEndSession' => response_end_session
     }
   end
 
   def response_output_speech
-    { type: 'PlainText', text: @output_speech }
+    { 'type' => 'PlainText', 'text' => @output_speech }
   end
 
   def response_card
-    { type: 'Simple', title: 'Amazon Echo', content: 'Response from amazon echo gem' }
+    { 'type' => 'Simple', 'title' => 'Amazon Echo', 'content' => 'Response from amazon echo gem' }
   end
 
   def response_reprompt
-    { 'outputSpeech' => { type: 'PlainText', text: 'Try again' }}
+    { 'outputSpeech' => { 'type' => 'PlainText', 'text' => 'Try again' }}
   end
 
   def response_end_session
@@ -44,9 +44,9 @@ class AmazonEcho::Response
 
   def response
     {
-      version: version,
+      'version' => version,
       'sessionAttributes' => session_attributes,
-      response: response_hash,
+      'response' => response_hash,
     }
   end
 end

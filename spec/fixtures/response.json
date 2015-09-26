@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "sessionAttributes": {},
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "hi"
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Amazon Echo",
+      "content": "Response from amazon echo gem"
+    },
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "Try again"
+      }
+    },
+    "shouldEndSession": true
+  }
+}
