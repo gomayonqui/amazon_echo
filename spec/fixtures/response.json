@@ -4,18 +4,18 @@
   "response": {
     "outputSpeech": {
       "type": "PlainText",
-      "text": "hi"
-    },
-    "card": {
-      "type": "Simple",
-      "title": "Amazon Echo",
-      "content": "Response from amazon echo gem"
+      "text": "OK, done"
     },
     "reprompt": {
       "outputSpeech": {
         "type": "PlainText",
         "text": "Try again"
       }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Amazon Echo gem",
+      "content": "Response from amazon echo gem"
     },
     "shouldEndSession": true
   }

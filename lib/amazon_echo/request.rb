@@ -1,5 +1,5 @@
 class AmazonEcho::Request
-  def initialize(request={})
+  def initialize(request)
     @request  = request
   end
 
@@ -7,11 +7,12 @@ class AmazonEcho::Request
     @request["type"]
   end
 
-  def intent
-    @request["intent"]["name"]
+  def timestamp
+    @request["timestamp"]
   end
 
-  def slot_value(slot_name)
-    @request["intent"]['slots'][slot_name]['value'] rescue nil
+  def request_id
+    @request["requestId"]
   end
+
 end

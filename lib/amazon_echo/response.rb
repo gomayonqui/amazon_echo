@@ -1,5 +1,5 @@
 class AmazonEcho::Response
-  def initialize(response={})
+  def initialize(response)
     @version              = response[:version]
     @session_attributes   = response[:session_attributes]
     @output_speech        = 'OK, done'
@@ -31,7 +31,7 @@ class AmazonEcho::Response
   end
 
   def response_card
-    { 'type' => 'Simple', 'title' => 'Amazon Echo', 'content' => 'Response from amazon echo gem' }
+    { 'type' => 'Simple', 'title' => 'Amazon Echo gem', 'content' => 'Response from amazon echo gem' }
   end
 
   def response_reprompt
