@@ -1,6 +1,9 @@
 # AmazonEcho
 
+[![Build Status](https://circleci.com/gh/gomayonqui/amazon_echo.png?style=shield)](https://circleci.com/gh/gomayonqui/amazon_echo)
+
 Simple client that supports requests and responses for amazon echo
+
 
 ## Installation
 
