@@ -25,7 +25,7 @@ Or install it yourself as:
 To start using the gem, create a new object
 ```ruby
   echo = AmazonEcho.new
-  echo.response.speech("Yes master")
+  echo.say("Yes master")
 ```
 
 ## Development
