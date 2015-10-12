@@ -1,5 +1,5 @@
 class AmazonEcho::Response
-  def initialize(response)
+  def initialize(response: {})
     @version              = response[:version]
     @session_attributes   = response[:session_attributes]
     @output_speech        = 'OK, done'
