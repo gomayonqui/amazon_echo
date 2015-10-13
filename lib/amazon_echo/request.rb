@@ -1,6 +1,9 @@
 class AmazonEcho::Request
   def initialize(request)
-    @request  = request
+    @original_request = request
+    @version          = request["version"]
+    @session          = request["session"]
+    @request          = request["request"]
   end
 
   def type
@@ -13,6 +16,10 @@ class AmazonEcho::Request
 
   def request_id
     @request["requestId"]
+  end
+
+  def request
+    @original_request
   end
 
 end
